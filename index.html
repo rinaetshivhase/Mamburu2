@@ -15620,11 +15620,57 @@ a:focus {
   
 </p>
 <body>
+  <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero_area {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero_bg_box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero_bg_box .img-box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero_bg_box .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
     <div class="hero_area">
-        <!-- header section strats -->
+        <!-- header section starts -->
         <div class="hero_bg_box">
             <div class="img-box">
-                <img src="https://postimg.cc/GBzXFh8W" alt="">
+                <img src="https://i.postimg.cc/GBzXFh8W/your-image.jpg" alt="Background Image">
             </div>
         </div>
 
